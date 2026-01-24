@@ -22,7 +22,7 @@ async def lifespan(app: FastAPI):
     yield
     logger.info("Application shutting down")
 
-app = FastAPI(title="Automation Task", lifespan=lifespan)
+app = FastAPI(title="Quote Scraper API", lifespan=lifespan)
 
 app.include_router(health_router)
 app.include_router(refresh_router)
