@@ -176,7 +176,7 @@ Returns a random quote from the current cache.
 
 **If no cache exists:**
 
-* Returns HTTP **503** with error message
+* Returns HTTP **503** with error message "No cached quotes available. Trigger /refresh first."
 
 ---
 
