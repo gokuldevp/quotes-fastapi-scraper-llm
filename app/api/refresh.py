@@ -5,6 +5,7 @@ router = APIRouter()
 
 @router.post("/refresh")
 def refresh_quotes():
+    """Endpoint to refresh quotes by scraping the website."""
     scraper = QuoteScraper()
     quotes = scraper.run()
 

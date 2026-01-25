@@ -1,6 +1,7 @@
 from datetime import datetime
 
 class QuoteCache:
+    """In-memory cache for quotes."""
     _quotes = []
     _cached_at = None
 

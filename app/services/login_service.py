@@ -7,6 +7,7 @@ from app.core.exceptions import EXPECTED_LOGIN_EXCEPTIONS
 logger = get_logger(__name__)
 
 class LoginService:
+    """Service to handle login functionality."""
     def __init__(self, driver):
         self.driver = driver
         self.page = LoginPage(driver)

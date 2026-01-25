@@ -4,6 +4,7 @@ from logging.handlers import RotatingFileHandler
 from app.core.config import LOG_DIR, LOG_FILE
 
 def setup_logging():
+    """Set up logging configuration."""
     os.makedirs(LOG_DIR, exist_ok=True)
 
     formatter = logging.Formatter(

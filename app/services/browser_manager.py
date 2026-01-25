@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.options import Options
 from app.core.config import HEADLESS
 
 class BrowserManager:
+    """Context manager to handle browser lifecycle."""
     def __enter__(self):
         options = Options()
         if HEADLESS:

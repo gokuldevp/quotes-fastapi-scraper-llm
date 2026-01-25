@@ -7,6 +7,7 @@ router = APIRouter()
 
 @router.get("/quote/random", response_model=Quote)
 def random_quote():
+    """Endpoint to get a random quote from the cache."""
     if not QuoteCache.has_data():
         raise HTTPException(
             status_code=503,

@@ -5,6 +5,8 @@ from app.pages.base_page import BasePage
 from app.core.config import TIMEOUT
 
 class LoginPage(BasePage):
+    """Page object for the login page."""
+    
     INPUT_USERNAME = (By.ID, "username")
     INPUT_PASSWORD = (By.ID, "password")
     BUTTON_LOGIN = (By.XPATH, '//input[@value="Login"]')

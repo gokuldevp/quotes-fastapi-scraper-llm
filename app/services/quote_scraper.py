@@ -9,6 +9,7 @@ from app.core.config import RETRY_COUNT
 logger = get_logger(__name__)
 
 class QuoteScraper:
+    """Service to scrape quotes from the website."""
     def run(self):
         with BrowserManager() as driver:
             logger.info("Browser started")

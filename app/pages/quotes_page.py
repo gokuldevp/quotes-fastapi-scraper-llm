@@ -2,6 +2,8 @@ from selenium.webdriver.common.by import By
 from app.pages.base_page import BasePage
 
 class QuotesPage(BasePage):
+    """Page object for the quotes page."""
+
     ITEMS_QUOTE_CLASS_NAME = (By.CLASS_NAME, "quote")
     TEXT_CLASS_NAME = (By.CLASS_NAME, "text")
     AUTHOR_CLASS_NAME = (By.CLASS_NAME, "author")

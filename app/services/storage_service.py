@@ -3,6 +3,7 @@ import os
 from app.core.config import DATA_FILE
 
 class StorageService:
+    """Service to handle storage of quotes"""
     
     @staticmethod
     def save(quotes: list[dict]):
