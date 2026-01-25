@@ -232,6 +232,7 @@ If this system ran continuously for months:
 
 1. Replace JSON storage with a database 
 2. Add rate limiting, retries, and backoff strategies
+3. Add Alerts for failures or abnormal scrape times.
 ---
 
 ## Challenges in Real-World Web Automation
