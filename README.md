@@ -77,7 +77,7 @@ quotes-fastapi-scraper/
 
 ```bash
 git clone https://github.com/gokuldevp/quotes-fastapi-scraper.git
-cd <the_cloned folder>
+cd <the_cloned_folder/quotes-fastapi-scraper>
 ```
 
 ---
