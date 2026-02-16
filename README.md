@@ -6,6 +6,7 @@ This project is a Python automation solution that:
 
 * Logs into https://quotes.toscrape.com using Selenium
 * Scrapes quotes from the first page after login
+* Convert the quotes to JSON format using LLM
 * Stores scraped data in JSON format
 * Exposes a local **FastAPI** server to:
 
@@ -22,6 +23,7 @@ This project is a Python automation solution that:
 * **Pydantic**
 * **JSON file storage**
 * **In-memory cache**
+* **Gemini API**
 ---
 
 ## Project Structure
@@ -46,7 +48,8 @@ quotes-fastapi-scraper/
 │   │   ├── login_page.py   
 │   │   └── quotes_page.py  
 │   ├── services/
-│   │   ├── browser_manager.py  
+│   │   ├── ai_services.py
+│   │   ├── browser_manager.py 
 │   │   ├── login_service.py    
 │   │   ├── quote_scraper.py    
 │   │   └── storage_service.py  
@@ -186,6 +189,7 @@ Returns a random quote from the current cache.
 
 The solution is split into focused classes:
 
+* **AIService** - Format the Quotes data in to usable json format
 * **BrowserManager** – manages Selenium browser lifecycle
 * **LoginService** – handles authentication logic
 * **QuoteScraper** – extracts quotes from the page
